@@ -1,0 +1,25 @@
+{
+  "name": "acecards-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CmdBlock-zqg/acecards-be.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/CmdBlock-zqg/acecards-be/issues"
+  },
+  "homepage": "https://github.com/CmdBlock-zqg/acecards-be",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "nodejs-snowflake": "^1.5.1"
+  }
+}
