@@ -40,7 +40,7 @@ router.get('/:id', async (req, resp) => {
 
 router.post('/', async(req, resp) => {
   const input = req.body
-  if (!input.name || !input.template || !input.ordered) {
+  if (!input.name || !input.template || input.ordered === undefined) {
     resp.status(400).send('参数错误，需要body参数name, template, ordered')
     return
   }
