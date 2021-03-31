@@ -3,10 +3,6 @@ const express = require('express')
 const model = require('../model')
 const crypto = require('../utils/crypto')
 
-const { UniqueID } = require('nodejs-snowflake');
-
-const uid = new UniqueID({}); 
-
 const router = express.Router()
 
 router.use(async (req, resp, next) => {
@@ -57,7 +53,7 @@ router.post('/', async(req, resp) => {
     return
   }
   const deck = {
-    _id: uid.getUniqueID().toString(36),
+    _id: crypto.random(),
     name: input.name,
     user: req.user,
     total: res[0].count,
