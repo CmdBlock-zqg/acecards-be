@@ -26,7 +26,7 @@ module.exports = (col) => {
     },
     async update (filter, update, upsert = false) {
       const res = await collection.updateOne(filter, { $set: update }, { upsert })
-      return res.result.nModified
+      return res.result.ok
     },
     async exist (filter) {
       return await collection.countDocuments(filter, { limit: 1 }) // 1 0
