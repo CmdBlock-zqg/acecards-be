@@ -1,5 +1,7 @@
 const express = require('express')
 
+const { port } = require('./config.js')
+
 const app = express()
 app.use(express.json())
 app.disable('x-powered-by')
@@ -24,6 +26,6 @@ api.use('/deck', require('./controllers/deck.js'))
 api.use('/template', require('./controllers/template.js'))
 // api.use('/test', require('./controllers/test.js'))
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log('# API server started!')
 })
