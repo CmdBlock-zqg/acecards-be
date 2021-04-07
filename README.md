@@ -1,6 +1,7 @@
 # AceCards
 
 卡片式记忆APP
+[使用指南](https://github.com/CmdBlock-zqg/acecards-be/blob/main/docs/guide.md) 
 
 ## 部署指南
 
