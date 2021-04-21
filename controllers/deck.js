@@ -11,7 +11,7 @@ router.use(async (req, resp, next) => {
     resp.status(401).send('请登录后再操作')
   }
   else {
-    req.user = user[1]
+    req.user = decodeURI(user[1])
     next()
   }
 })
